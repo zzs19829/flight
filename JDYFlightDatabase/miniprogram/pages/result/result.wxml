@@ -1,0 +1,65 @@
+<!--pages/result/result.wxml-->
+<view class="container">
+  <view class="pannel flight">
+    <view class="goFlight">
+      <view class="flightDate">
+        <view>
+          <text>上海</text>
+          <text class="time">10:30</text>
+        </view>
+        <view>
+          <text class="date">2019/05/21</text>
+          <text class="flightPic"></text>
+        </view>
+        <view>
+          <text>北京</text>
+          <text class="time">14:30</text>
+        </view>
+      </view>
+
+      <view class="flightLine airport">
+        <text>上海虹桥机场</text>
+        <text>首都国际机场</text>
+      </view>
+
+      <view class="flightLine flightDetail">
+        
+        <text class="go">去程</text>
+      </view>
+    </view>
+
+    <view class="backFlight">
+      <view class="flightDate">
+        <view>
+          <text>上海</text>
+          <text class="time">12:30</text>
+        </view>
+        <view>
+          <text class="date">2019/05/12</text>
+          <text class="flightPic"></text>
+        </view>
+        <view>
+          <text>北京</text>
+          <text class="time">15:30</text>
+        </view>
+      </view>
+
+      <view class="flightLine airport">
+        <text>上海虹桥机场</text>
+        <text>首都国际机场</text>
+      </view>
+
+      <view class="flightLine flightDetail">
+        <text class="go">去程</text>
+      </view>
+    </view>
+
+    <view class="remark">
+      <icon type="warn" size="16" color="#ff7f00"/>
+      <view>退改签说明/婴儿不可订</view>
+    </view>
+
+  </view>
+  
+</view>
+

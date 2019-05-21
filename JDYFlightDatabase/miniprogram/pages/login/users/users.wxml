@@ -1,0 +1,3 @@
+<view>
+<text>欢迎登录，用户{{userName}}</text>
+</view>

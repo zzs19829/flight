@@ -1,0 +1,45 @@
+{
+  "pages": [
+    
+    "pages/select/select",
+    "pages/result/result",
+    "pages/welcome/welcome",
+    "pages/login/users/users",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "机票预订",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#59A5F0",
+    "list": [
+      {
+        "pagePath": "pages/select/select",
+        "text": "查询",
+        "iconPath": "./images/tab1.png",
+        "selectedIconPath": "./images/tabcolor1.png"
+      },
+      {
+        "pagePath": "pages/welcome/welcome",
+        "text": "登录",
+        "iconPath": "./images/tab2.png",
+        "selectedIconPath": "./images/tabcolor2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,19 @@
+<view class="big_containor">
+  <view class='title_align'>
+    <text>{{title}}</text>
+  </view>
+  <view class="divline"></view>
+
+ <view class="above_align">
+    <text>用户名\n</text>
+    <input name="username" bindinput="inputName" adjust-position='true' placeholder="请输入您的用户名/手机号" auto-focus/>
+    <text>密码</text>
+    <input name="password" bindinput="inputPassword" adjust-position='true' password='true' placeholder="请输入您的密码" auto-focus/>
+  </view>
+
+  <view class="under_align">
+  <button type='primary' bindtap="login">登 录</button>
+  <button type='default' bindtap="register">注 册</button>
+  <text style="font-size:33rpx;text-align:middle">如果您还没有账户，请填好用户名和密码后直接点击注册。</text>
+  </view>
+</view>

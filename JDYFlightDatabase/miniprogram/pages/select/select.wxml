@@ -1,0 +1,42 @@
+<!--pages/select/select.wxml-->
+<view class='container'>
+  <view class='btn' bindtap='changeBtn'>
+    <view class="{{currentIndex==0?'active':''}}"  data-index="0">单程</view>
+    <view class="{{currentIndex==1?'active':''}}"  data-index="1">往返</view>
+  </view>
+
+  <view class='chooseCity pd-70'>
+    <view class='citySelect'>
+      <view class='startCity' bindtap='selectCity'>{{depCity}}</view>
+      <view class='citySelect_img'>
+        <view bindtap='rotate_img' animation='{{animation}}'>
+          <image class='changeCity_bg' src='../../images/changeCity_bg.png'></image>
+        </view>
+        <image class='samll_plane' src='../../images/samll_plane.png'></image>
+      </view>
+      <view class='endCity' bindtap='selectCity'>{{arvCity}}</view>
+    </view>
+
+    <view class="chooseDate">
+      <block>
+        <picker mode="date">
+          <view class="startDate">
+            <text class="date">5月21日</text>
+            <text class="week">周二出发</text>
+          </view>
+        </picker>
+      </block>
+
+      <block wx:if="{{currentIndex==1}}">
+        <picker mode="date">
+          <view class="endDate">
+            <text class="date">5月22日</text>
+            <text class="week">周三返回</text>
+          </view>
+        </picker>
+      </block>
+    </view>
+    
+  </view>
+  <button class="sureBtn" bindtap="seatchProduct">搜索</button>
+</view>
