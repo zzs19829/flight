@@ -1,3 +1,7 @@
-<view>
-<text>欢迎登录，用户{{userName}}</text>
+<view class="big_containor">
+<view class="normal_align">
+<text>尊敬的用户，您还没有登录！</text>
+<text wx:if="{{userLogin==false}}"> \r\n请点击头像进行登录！</text>
+<image src="../../../images/NoUser.png" bindtap="Login"></image>
+</view>
 </view>

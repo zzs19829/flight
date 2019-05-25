@@ -118,7 +118,7 @@ Page({
   loginreturn:function(information){
     var that=this;
     var p = new Promise(function (resolve, reject) {  
-      wx.navigateTo({
+      wx.navigateBack({
         url: '../../pages/login/users/users?inputName='+inputName,
       });
     });
